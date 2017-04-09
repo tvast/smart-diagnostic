@@ -1,0 +1,129 @@
+.conversational-form {
+  visibility: visible !important;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  line-height: 1.416666667;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  margin: auto;
+  background: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  will-change: opacity;
+  padding: 20px 0px;
+}
+.conversational-form *,
+.conversational-form *:before,
+.conversational-form *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+.conversational-form:before {
+  content: "";
+  width: 100%;
+  height: 50px;
+  pointer-events: none;
+  background: -webkit-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background: -moz-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, #fff 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to bottom, #fff 0%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+.conversational-form button {
+  border: none;
+  background: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+}
+.conversational-form menu {
+  padding: 0px;
+  margin: 0px;
+}
+.conversational-form ul,
+.conversational-form ol,
+.conversational-form li {
+  margin: 0;
+  padding: 0;
+}
+.conversational-form a,
+.conversational-form a:active,
+.conversational-form a:visited {
+  color: currentColor;
+}
+.conversational-form button,
+.conversational-form a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.conversational-form .emoji {
+  width: 16px;
+  height: auto;
+  margin: 0px 4px;
+}
+.conversational-form .conversational-form-inner {
+  padding: 0px 20px;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  bottom: 0px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -o-box-lines: single;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: baseline;
+  -moz-box-align: baseline;
+  -o-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+}
+.conversational-form--enable-animation .conversational-form {
+  -webkit-transition: opacity 0.1875s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: opacity 0.1875s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0.1875s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: opacity 0.1875s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.1875s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.conversational-form * {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  tap-highlight-color: rgba(255,255,255,0);
+}
+.conversational-form--show {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}

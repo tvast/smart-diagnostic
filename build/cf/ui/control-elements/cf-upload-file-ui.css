@@ -1,0 +1,109 @@
+cf-upload-file-ui {
+  display: block;
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 0px;
+  padding-right: 30px;
+  color: #1b9bfc;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translateY(20px) rotateX(30deg);
+  -moz-transform: translateY(20px) rotateX(30deg);
+  -o-transform: translateY(20px) rotateX(30deg);
+  -ms-transform: translateY(20px) rotateX(30deg);
+  transform: translateY(20px) rotateX(30deg);
+  will-change: opacity, transform;
+}
+.conversational-form--enable-animation cf-upload-file-ui {
+  -webkit-transition: opacity 0.375s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: opacity 0.375s cubic-bezier(0.215, 0.61, 0.355, 1), -moz-transform 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0.375s cubic-bezier(0.215, 0.61, 0.355, 1), -o-transform 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: opacity 0.375s cubic-bezier(0.215, 0.61, 0.355, 1), -ms-transform 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.375s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+cf-upload-file-ui.animate-in {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateY(0px) rotateX(0deg);
+  -moz-transform: translateY(0px) rotateX(0deg);
+  -o-transform: translateY(0px) rotateX(0deg);
+  -ms-transform: translateY(0px) rotateX(0deg);
+  transform: translateY(0px) rotateX(0deg);
+}
+.conversational-form--enable-animation cf-upload-file-ui.animate-in {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+cf-upload-file-text {
+  display: block;
+  float: left;
+  width: auto;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 17px;
+  position: relative;
+  color: currentColor;
+  max-width: 50%;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+cf-upload-file-text:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 17px;
+  left: 23px;
+  width: 10px;
+  height: 14px;
+  background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAgMTQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGcgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTc1Ni4wMDAwMDAsIC01NDkuMDAwMDAwKSIgZmlsbD0iIzBEODNGRiI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzM2LjAwMDAwMCwgMTI3LjAwMDAwMCkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCA0MDYuMDAwMDAwKSI+PHBvbHlnb24gcG9pbnRzPSIyMCAxNiAyNi4wMDMwNzk5IDE2IDMwIDE5Ljk5OTk0IDMwIDMwIDIwIDMwIj48L3BvbHlnb24+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  -webkit-background-size: 10px 14px;
+  -moz-background-size: 10px 14px;
+  background-size: 10px 14px;
+}
+cf-upload-file-progress {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-right: 30px;
+}
+cf-upload-file-progress:after {
+  content: "";
+  width: 100%;
+  background: #e6f2ff;
+  border-radius: 7px;
+}
+cf-upload-file-progress:after,
+cf-upload-file-progress cf-upload-file-progress-bar {
+  display: block;
+  height: 10px;
+  position: absolute;
+  top: 19px;
+  z-index: 1;
+}
+cf-upload-file-progress cf-upload-file-progress-bar {
+  width: 0%;
+  will-change: width, border-radius;
+  background: currentColor;
+  z-index: 2;
+  border-radius: 7px 0px 0px 7px;
+}
+.conversational-form--enable-animation cf-upload-file-progress cf-upload-file-progress-bar {
+  -webkit-transition: width 0.15s linear, border-radius 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: width 0.15s linear, border-radius 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: width 0.15s linear, border-radius 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: width 0.15s linear, border-radius 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: width 0.15s linear, border-radius 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+cf-upload-file-progress cf-upload-file-progress-bar.loaded {
+  border-radius: 7px 7px 7px 7px;
+}

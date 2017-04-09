@@ -1,0 +1,112 @@
+.cf-button {
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(13,131,255,0.1);
+  border-radius: 24px;
+  color: #1b9bfc;
+  line-height: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  will-change: opacity, background;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.cf-button > div {
+  padding: 12px 24px;
+}
+.cf-button.has-image {
+  max-width: 250px;
+}
+.cf-button > div {
+  position: relative;
+}
+.conversational-form--enable-animation .cf-button {
+  -webkit-transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), background 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.cf-button.animate-in {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.conversational-form--enable-animation .cf-button.animate-in {
+  -webkit-transition-duration: 0.375s, 0.75s;
+  -moz-transition-duration: 0.375s, 0.75s;
+  -o-transition-duration: 0.375s, 0.75s;
+  -ms-transition-duration: 0.375s, 0.75s;
+  transition-duration: 0.375s, 0.75s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1), cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.conversational-form--enable-animation .cf-button.animate-in:nth-child(even) {
+  -webkit-transition-delay: 0.05s, 0s;
+  -moz-transition-delay: 0.05s, 0s;
+  -o-transition-delay: 0.05s, 0s;
+  -ms-transition-delay: 0.05s, 0s;
+  transition-delay: 0.05s, 0s;
+}
+.conversational-form--enable-animation .cf-button.animate-in:nth-child(odd) {
+  -webkit-transition-delay: 0.15s, 0s;
+  -moz-transition-delay: 0.15s, 0s;
+  -o-transition-delay: 0.15s, 0s;
+  -ms-transition-delay: 0.15s, 0s;
+  transition-delay: 0.15s, 0s;
+}
+.cf-button.animate-in.animate-out {
+  -webkit-transform-origin: 75% 100%;
+  -moz-transform-origin: 75% 100%;
+  -o-transform-origin: 75% 100%;
+  -ms-transform-origin: 75% 100%;
+  transform-origin: 75% 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.cf-button:not(:last-child) {
+  margin-right: 10px;
+}
+.cf-button:hover,
+.cf-button:focus {
+  background: rgba(13,131,255,0.1);
+}
+.cf-button:active {
+  background: rgba(13,131,255,0.2);
+}
+.cf-button .cf-image {
+  width: 100%;
+  height: auto;
+  will-change: opacity;
+  -webkit-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.cf-button .cf-image.loaded {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}

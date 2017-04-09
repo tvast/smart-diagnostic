@@ -1,0 +1,39 @@
+cf-info {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  left: 2px;
+  top: 0px;
+  height: auto;
+  width: 100%;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  padding-right: 20px;
+  overflow: hidden;
+  display: block;
+  -webkit-transform: translateY(-115%);
+  -moz-transform: translateY(-115%);
+  -o-transform: translateY(-115%);
+  -ms-transform: translateY(-115%);
+  transform: translateY(-115%);
+  color: #acb2b6;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  will-change: opacity;
+}
+cf-info.show {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.conversational-form--enable-animation cf-info.show {
+  -webkit-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+cf-info strong {
+  font-weight: 900;
+}

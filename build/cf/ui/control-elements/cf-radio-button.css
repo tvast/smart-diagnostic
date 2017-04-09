@@ -1,0 +1,31 @@
+cf-radio-button.cf-button:hover cf-radio,
+cf-radio-button.cf-button.highlight cf-radio,
+cf-radio-button.cf-button:focus cf-radio {
+  background: #1b9bfc;
+}
+cf-radio-button.cf-button.has-image cf-checkbox {
+  margin-left: 0px;
+}
+cf-radio-button.cf-button cf-radio {
+  display: block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e6f3fe;
+  will-change: background;
+  margin-right: 10px;
+  margin-left: -10px;
+  position: relative;
+}
+.conversational-form--enable-animation cf-radio-button.cf-button cf-radio {
+  -webkit-transition: background 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: background 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: background 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: background 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: background 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+cf-radio-button.cf-button[checked="checked"] cf-radio {
+  background: #1b9bfc;
+  pointer-events: none;
+}

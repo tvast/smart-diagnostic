@@ -1,0 +1,61 @@
+cf-input-control-elements {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: hidden;
+  height: 0px;
+}
+cf-input-control-elements .cf-button {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+cf-input-control-elements .cf-button.hide {
+  display: none;
+}
+cf-input-control-elements.resized {
+  visibility: visible;
+  height: auto;
+}
+cf-input-control-elements.one-row cf-list {
+  height: auto;
+}
+cf-input-control-elements.one-row cf-list-button {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+cf-input-control-elements.two-row cf-list {
+  white-space: normal;
+  height: auto;
+}
+cf-list,
+cf-list-button {
+  will-change: height;
+}
+.conversational-form--enable-animation cf-list,
+.conversational-form--enable-animation cf-list-button {
+  -webkit-transition: height 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: height 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: height 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: height 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: height 0.375s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+cf-input[tag-type="file"] cf-list {
+  cursor: default;
+}
+cf-list {
+  display: block;
+  height: 0px;
+  cursor: move;
+  white-space: nowrap;
+}
+cf-list.disabled {
+  pointer-events: none;
+}
